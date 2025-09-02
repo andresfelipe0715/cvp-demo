@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document No. 1</title>
+    <link href="{{ asset('css/f4.css') }}" type="text/css" rel="stylesheet" />
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h4 { text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; border: 1px solid #000; }
+        th, td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+        th { background-color: #f2f2f2; }
+        .unit-container { margin-top: 20px; }
+        .dimension-table { border: none; width: 50%; border-collapse: collapse; margin: 8px 0; }
+        .dimension-table td { border: none; padding: 8px; text-align: left; vertical-align: top; }
+        .aprobado-box { margin-top: 10px; }
+        .no-border { border: none; }
+        .text-right { text-align: right; }
+        .aprobado-box table { border: none; }
+        .aprobado-box table tr td { border: none; }
+    </style>
+</head>
+<body>
+    <h4>College Name<br>Document No. 1</h4>
+    <br/>
+    <div style="margin-top: 20px;"><strong>Creation Date:</strong> {{ show[0].submitdate }}</div>
+    <br/>
+    <table>
+        <tbody>
+            <tr>
+                <td><strong>Program</strong></td>
+                <td>{{ show[0].program_name }}</td>
+            </tr>
+            <tr>
+                <td><strong>Course</strong></td>
+                <td>{{ show[0].course_name }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+
+    <div class="unit-container">
+        {% for unit in show[0].units %}
+            <br/>
+            <table>
+                <tr>
+                    <td style="width: 70%;"><strong>Unit Name:</strong> {{ unit.unit_name }}</td>
+                    <td class="text-right" style="width: 30%;"><strong>Number:</strong> {{ loop.index }}</td>
+                </tr>
+            </table>
+            <br/>
+            <div style="margin: 20px 0 30px 0;">
+                <strong>Pedagogical Dimension:</strong>
+                <table class="dimension-table">
+                    <tr>
+                        <td>Approved: {% if unit.fedp_aprobacion == '1' %}X{% endif %}</td>
+                        <td>Not Approved: {% if unit.fedp_aprobacion == '0' %}X{% endif %}</td>
+                    </tr>
+                </table>
+                <br/><br/>
+                <table style="width: 100%; border-collapse: collapse; margin: 20px 0; page-break-inside: avoid;">
+                    <tr>
+                        <td style="width: 50%; text-align: left;"><strong>Observation Date:</strong> {{ unit.fedp_fecha }}</td>
+                        <td style="width: 50%; text-align: right;"><strong>Review Number:</strong> {{ unit.fedp_revision }}</td>
+                    </tr>
+                </table>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td colspan="2"><strong>Observation:</strong> {{ unit.fedp_observacion | nl2br }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><p><strong>Number of Files:</strong> {{ unit.fedp_archivos }}</p></td>
+                    </tr>
+                </table>
+            </div>
+
+            <br/>
+            <div style="margin: 10px 0;">
+                <strong>Comunicacional Dimension:</strong>
+                <table class="dimension-table">
+                    <tr>
+                        <td>Approved: {% if unit.fedc_aprobacion == '1' %}X{% endif %}</td>
+                        <td>Not Approved: {% if unit.fedc_aprobacion == '0' %}X{% endif %}</td>
+                    </tr>
+                </table>
+                <br/><br/>
+                <table style="width: 100%; border-collapse: collapse; margin: 20px 0; page-break-inside: avoid;">
+                    <tr>
+                        <td style="width: 50%; text-align: left;"><strong>Observation Date:</strong> {{ unit.fedc_fecha }}</td>
+                        <td style="width: 50%; text-align: right;"><strong>Review Date:</strong> {{ unit.fedc_revision }}</td>
+                    </tr>
+                </table>
+                <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                    <tr>
+                        <td colspan="2"><strong>Observation:</strong> {{ unit.fedc_observacion | nl2br }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><strong>Number of Files:</strong> {{ unit.fedc_archivos }}</td>
+                    </tr>
+                </table>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div style="page-break-inside: avoid">
+        <p><strong>Approved by:</strong></p>
+        <table style="margin-top: 0px; border: none; border-collapse: collapse;">
+            <tr style="padding: 0;">
+                <td style="border: none; padding: 0;">
+                    {{ show[0].name_document_ped }}<br>Pedagogical Dimension<br>
+                    
+                </td>
+                <td class="text-right" style="border: none; padding: 0;">
+                    {{ show[0].name_document_comu }}<br>Communicational Dimension<br>
+                    
+                </td>
+            </tr>
+        </table>
+        <div><br/>
+            <div class="aprobado-box">Transcriber: {{ show[0].name_document_transcript }}</div>
+        </div>
+    </div>
+</body>
+</html>

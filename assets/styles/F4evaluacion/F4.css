@@ -1,0 +1,123 @@
+
+.selector{
+    width: 90% !important;
+  
+    
+}
+
+.f4-dimension {
+    display: flex;
+    flex-direction: column !important;
+    border: 1px black solid;
+    
+    border-radius: 10px;
+    margin-top: 2%;
+}
+
+.f4-selector-unidad{
+    
+    width: 100%;
+}
+
+.grid-top-dimension{
+    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+
+.f4-card-dimension{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    justify-content: space-between;
+    
+}
+.f4-card{
+    width: 100%;
+   
+}
+.f4-card-testttt{
+    
+    width: 100%;
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .f4-card-dimension {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+      
+    }
+    .f4-card-testttt{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+  }
+  @media only screen and (max-width: 1156px) {
+    .f4-card {
+      width: 90%;
+      margin: 0 5px 0 5px;
+    }
+  }
+
+.f4-unidad-aprobacion{
+
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    
+    
+}
+
+.select-coordinador-f4{
+
+    width: 100%;
+}
+
+
+.f4-fecha-revision{
+
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.f4-agregar-unidad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.selector{
+    width: 100% !important;
+}
+.f4-observaciones{
+    width: 100%;
+}
+
+.f4-archivosAdjuntos{
+    width: 100%;
+}
+
+.f4-fab{
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+
+

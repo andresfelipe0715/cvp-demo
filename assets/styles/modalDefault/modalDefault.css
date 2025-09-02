@@ -1,0 +1,73 @@
+.card {
+    text-align: center;
+  }
+  
+  .container {
+    background-color: #6D6D6D;
+    height: 200%;
+    display: flex;
+    justify-content: center;
+  }
+    
+  /* Modal */
+  
+  .modalCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  
+  .bigFlot {
+    position: relative;
+    width: 70% !important;
+    border-radius: 5px;
+    max-height: 80vh;
+    overflow: auto;
+  }
+  
+  .smallFlot {
+    position: relative;
+    width: 40% !important;
+    border-radius: 5px;
+    max-height: 80vh;
+    overflow: auto;
+  }
+  @media (max-width: 1280px) {
+    .smallFlot {
+      width: 50% !important;
+    }
+  }
+  @media (max-width: 830px) {
+    .smallFlot {
+      width: 70% !important;
+    }
+  }
+  .modalContent {
+    padding: 1em;
+    position: relative;
+    margin-top: -10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-height: 80vh;
+  }
+  
+  .modalHeader {
+    width: 100%;
+    border-radius: 5px;
+    width: calc(100% - 7.5em);
+  }
+  
+  .modalHeader h3 {
+    color: #ec1c21;
+    text-align: center;
+    text-shadow: rgb(255 246 230) -0.04em 0.04em, rgb(231 220 215) -0.04em 0.04em;
+    padding: 1.3em 1em;
+    width: 100%;
+    margin: 0;
+    text-shadow: -0.03em 0.03em #fff6e6, -0.08em 0.08em #e7dcd7;
+    font-weight: bold;
+    margin-left: -60px;
+  }
+  

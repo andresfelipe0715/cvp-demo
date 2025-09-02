@@ -1,0 +1,41 @@
+{
+    "name": "cvp",
+    "devDependencies": {
+        "@babel/core": "^7.17.0",
+        "@babel/preset-env": "^7.16.0",
+        "@babel/preset-react": "^7.0.0",
+        "@symfony/webpack-encore": "^5.1.0",
+        "@tinymce/tinymce-react": "^5.1.1",
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "core-js": "^3.23.0",
+        "regenerator-runtime": "^0.13.9",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-notifier": "^1.15.0"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production --progress"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.13.3",
+        "@emotion/styled": "^11.13.0",
+        "@mui/icons-material": "^5.16.7",
+        "@mui/material": "^5.16.7",
+        "@mui/x-date-pickers": "^7.13.0",
+        "axios": "^1.7.7",
+        "dayjs": "^1.11.12",
+        "lottie-react": "^2.4.0",
+        "prop-types": "^15.8.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-form-validator-core": "^1.1.2",
+        "react-material-ui-form-validator": "^3.0.1",
+        "react-router-dom": "^6.26.1"
+    }
+}

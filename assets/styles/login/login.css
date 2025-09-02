@@ -1,0 +1,101 @@
+
+body{
+    background-color: rgb(240, 240, 240);
+    overflow: hidden !important;
+    padding: 0;
+    margin: 0;
+    
+}
+
+@media (max-height: 660px) {
+    body {
+        height: 130vh !important;
+        overflow-y: scroll !important;
+    }
+}
+
+
+.login{
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+         
+}
+.login-card-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+
+}
+
+@media (max-height: 660px) {
+    .login-card-main-container {
+        height: 130vh !important;
+        
+    }
+}
+
+@media (max-height: 510px) {
+    .login-card-main-container {
+        height: 150vh !important;
+        
+    }
+}
+
+.submit-form{
+    
+    background-color: #ec1c21 !important;
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+    
+}
+
+.card{
+
+    width: 500px;
+    min-width: 400px;
+    border-top: 5px solid #ec1c21;
+    border-bottom: 5px solid #ec1c21;
+}
+
+.login-form{
+    
+    display: flex;
+
+    flex-direction: column;
+    
+    width: 500px;
+
+
+}
+
+
+
+
+
+.input-form{
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color: rgb(238, 235, 235);
+}
+

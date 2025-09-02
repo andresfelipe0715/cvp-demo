@@ -1,0 +1,193 @@
+
+body {
+    
+    background-color: rgb(240, 240, 240) !important;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+@media (max-width: 1919px) {
+    body {
+        overflow-y: auto !important;
+    }
+}
+.dashboard-main{
+    /*background-color: rgb(240, 240, 240);*/
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.f-main.drawer-open{
+    
+    display: flex;
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 15%;
+    flex-direction: column !important;
+
+}
+
+.f-main.drawer-closed{
+    
+    display: flex;
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-bottom: 10%;
+    flex-direction: column !important;
+
+}
+
+@media (max-width: 1720px) {
+    .f-main.drawer-open {
+        padding-top: 5%;
+    }
+
+    .f-main.drawer-closed {
+        padding-top: 5%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .f-main.drawer-open {
+        padding-left: 3%;
+        padding-right: 10%;
+    }
+
+    .f-main.drawer-closed {
+        padding-left: 3%;
+        padding-right: 10%;
+    }
+}
+
+.bienvenida.drawer-open{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-top: -6%
+    
+}
+
+.bienvenida.drawer-closed{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1%;
+    
+}
+
+@media (max-width: 850px) {
+    .bienvenida h1 {
+        font-size: 1.2rem; /* Adjust to your desired size */
+    }
+}
+/* Add this CSS to your main.css */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.f-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-h1{
+    font-size: 1rem;
+    
+}
+
+
+.coordinadores{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    src: url('../../font/outline.woff2') format('woff2');
+  }
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: 'liga';
+  }
+  
+  .footer {
+    position: fixed;    
+    bottom: 0;             
+    width: 100%;             
+    height: 7%;              
+    background-color: #6D6D6D; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+    transform: translateX(0);
+  }
+
+
+
+.footer-open {
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    height: 7%; 
+    background-color: #6D6D6D;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+    transform: translateX(-240px);
+  }
+
+
+  @media (max-width: 1200px) {
+    .footer {
+        font-size: 12px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer-open {
+        font-size: 12px;
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .footer-open {
+        margin-left: 120px;
+    }
+}

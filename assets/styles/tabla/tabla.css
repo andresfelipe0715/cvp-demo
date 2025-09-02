@@ -1,0 +1,198 @@
+.tableGeneral {
+    width: 100%;
+    display: table;
+    font-family: "Myriad Pro", "Myriad Pro Bold", "Myriad Pro Cond", "Myriad Pro Bold Cond";
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .tableGeneral thead tr td,
+  .tableGeneral thead tr th {
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    background: linear-gradient(0, #3f5055d6 30%, #516970d6 84%);
+    font-weight: bold;
+    border-bottom: 2px solid rgba(173, 170, 170);
+    padding: 0.2em;
+    box-shadow: 3px 1px 5px rgb(70 70 70 / 60%);
+  }
+  
+  .tableGeneral tbody tr {
+    color: inherit;
+    height: 48px;
+    display: table-row;
+    outline: none;
+    vertical-align: middle;
+  }
+  
+  .tableGeneral tbody tr td {
+    padding: 1em;
+    position: relative;
+    text-align: justify;
+    border-bottom: 0.5px solid rgba(173, 170, 170) !important;
+  }
+  
+  .tableGeneral tbody tr td::first-letter {
+    /* text-transform: uppercase; */
+  }
+  
+  .icon {
+    border-radius: 100%;
+    
+    padding: 0.4em;
+    color: white !important;
+    box-shadow: 0px 1px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 1px 0px rgb(0 0 0 / 12%);
+  }
+  
+  .icon button {
+    color: white !important;
+  }
+  
+  .icon.top {
+    margin-top: 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .icon.orange {
+    width: 2em;
+    height: 2em;
+    background: #ec801c;
+    border: 1px solid #ff8718;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .icon.orange:hover {
+    background: #e9a462 !important;
+  }
+  
+  .icon.red {
+    width: 2em;
+    height: 2em;
+    background: red;
+    border: 1px solid #f81515;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .icon.red:hover {
+    background: #fc5656;
+  }
+  
+  .icon.green {
+    width: 2em;
+    height: 2em;
+    background: #10a925;
+    border: 1px solid #129524;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .icon.green:hover {
+    background: #35aa45;
+  }
+  
+  .icon.green1 {
+    width: 1em;
+    height: 1em;
+    background: #0bcc29;
+    border: 1px solid #0bc224;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .icon.green1:hover {
+    background: #35aa45;
+  }
+  
+  .icon.blue {
+    width: 1em;
+    height: 1em;
+    background: #207bc0;
+    border: 1px solid #2075b6;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .icon.blue:hover {
+    background: #0b5e9d;
+  }
+  
+  .icon.gray {
+    width: 1em;
+    height: 1em;
+    background: #9fa39f;
+    border: 1px solid #8f918f;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .icon.gray:hover {
+    background: #a1a3a2;
+  }
+  
+  .tableIcon {
+    text-align: center;
+  }
+  
+  .searchTable {
+    width: 100%;
+    max-width: 15em;
+    clear: right;
+    float: right;
+    padding-bottom: 0.5em !important;
+    padding-right: 1em !important;
+  }
+  
+  .tableGeneral_ar {
+    width: 100%;
+    display: table;
+    font-family: "Myriad Pro", "Myriad Pro Bold", "Myriad Pro Cond", "Myriad Pro Bold Cond";
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .tableGeneral_ar thead tr {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .tableGeneral_ar thead tr td,
+  .tableGeneral_ar thead tr th {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    background: linear-gradient(#c12820, #e2001a);
+    font-weight: bold;
+    border-bottom: 2px solid rgba(173, 170, 170);
+    padding: 0.4em;
+    box-shadow: 3px 1px 5px rgb(70 70 70 / 60%);
+  }
+  
+  .tableGeneral_ar tbody tr {
+    color: inherit;
+    height: 48px;
+    display: table-row;
+    outline: none;
+    vertical-align: middle;
+  }
+  
+  .tableGeneral_ar tbody tr td {
+    padding: 1em;
+    position: relative;
+    text-align: justify;
+    border-bottom: 0.5px solid rgba(173, 170, 170) !important;
+  }
+  
+  .tableGeneral_ar tbody tr td::first-letter {
+    /* text-transform: uppercase; */
+  }
+
+
+
+

@@ -1,0 +1,10 @@
+{
+    "titulo": 1,
+    "documento": "12345678",
+    "nombreCompleto": "Juan Perez",
+    "contrasena": "fasdfsdfsdfsadf",
+    "role": "02",
+    "email": "juan.perez@example.com",
+    "estado": "ap"
+   
+}
